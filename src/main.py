@@ -47,7 +47,7 @@ async def hello_sb(user):
     return {"Hello": user}
 
 
-@app.get('/when/{year}')
+@app.get('/when')
 async def when(year:int) -> dict:
     if int(year) < 2024:
         return {"Year": 2024-int(year)}
